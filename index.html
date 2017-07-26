@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mushroom Factory</title>
+</head>
+<body ng-app="mushroomFactory">
+	<h1>Welcome To The Factory</h1>
+	<div ng-controller="MushroomController">
+		<h2>These are the mushrooms!</h2>
+		<ul>
+			<li ng-repeat="mushrooms in mushroomList">
+				{{mushrooms.name}}: <br>{{mushrooms.description}}}<br>It is {{mushrooms.edible}} that they are edible!
+			</li>
+		</ul>
+	</div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="app.js"></script>
+</body>
+</html>
